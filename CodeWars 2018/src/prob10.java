@@ -8,7 +8,25 @@ public class prob10 {
 	static Scanner in;
 	
 	public static void solve() throws IOException {//ans to STDOUT
-		
+		//int loop = Integer.parseInt(in.nextLine());
+		int loop = in.nextInt();
+		for(int i = 0; i < loop; i++) {
+			int count = 1;
+			int paint = 0;
+			int top = in.nextInt();
+			int row = in.nextInt();
+			if(top == 1) paint+=5;
+			else {
+				paint+=(Math.sqrt(top) * 4) + top;
+			}
+			top = (int) Math.sqrt(top);
+			for(int j = count; count < row; count++ ) {
+				top++;
+				paint+=(top * 4);
+				paint+=((top * top) - ((top - 1) * (top - 1)));
+			}
+			System.out.println(paint + " liters");
+		}
 	}
 	
 	public static boolean isPrime(int n) {

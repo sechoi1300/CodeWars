@@ -8,7 +8,20 @@ public class prob09 {
 	static Scanner in;
 	
 	public static void solve() throws IOException {//ans to STDOUT
-		
+		while(true) {
+			int n = in.nextInt();
+			if(n == 0) break;
+			String s = Integer.toBinaryString(n);
+			int ones = 0;
+			int zeroes = 0;
+			for(int i = 0; i < s.length(); i++) {
+				if(s.charAt(i) == '1') ones++;
+				else zeroes++;
+			}
+			if(ones == zeroes) System.out.println(n + " BALANCED");
+			else if(ones > zeroes) System.out.println(n + " HEAVY");
+			else System.out.println(n + " LIGHT");
+		}
 	}
 	
 	public static boolean isPrime(int n) {

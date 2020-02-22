@@ -8,7 +8,23 @@ public class prob08 {
 	static Scanner in;
 	
 	public static void solve() throws IOException {//ans to STDOUT
-		
+		while(true) {
+			int num1 = in.nextInt();
+			int num2 = in.nextInt();
+			if(num1 == 0 && num2 == 0) break;
+			String result = num1+"";
+			int lastnum = num1;
+			while(true) {
+				lastnum++;
+				if(result.length() + Integer.toString(lastnum).length() > num2) {
+					lastnum--;
+					break;
+				}
+				else result += lastnum;
+			}
+			if(Integer.toString(num1).length() > num2) System.out.println(num1 + " " + num2 + " 0");
+			else System.out.println(num1 + " " + num2 + " " + lastnum);
+		}
 	}
 	
 	public static boolean isPrime(int n) {

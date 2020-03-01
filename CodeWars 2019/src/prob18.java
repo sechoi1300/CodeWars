@@ -35,7 +35,7 @@ public class prob18 {
 		int magicnum = Integer.parseInt(in.nextLine());
 		int index = 0;
 		while(true) {
-			if(c1.length == 1) break;
+			//if(c1.length == 1) break;
 		}
 	}
 	

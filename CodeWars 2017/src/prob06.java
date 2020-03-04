@@ -17,16 +17,16 @@ public class prob06 {
 			for(int j = 0; j < n; j++) {
 				num[j] = in.nextInt();
 			}
-			for(int j = 0; j < delta.length; j++) {
-				delta[j] = -(num[index++] - num[index]);
+			for(int j = 0; j < n - 1; j++) {
+				delta[j] = -(num[index+1] - num[index]);
 				index++;
 			}
 			index = 0;
-			for(int j = 0; j < num.length; j++) {
-				num[j] = num[j] + delta[index];
+			for(int j = 1; j < num.length; j++) {
+				num[j] = num[j-1] + delta[index];
 				index++;
-				System.out.println(num[j]);
 			}
+			System.out.println(Arrays.toString(num));
 		}
 	}
 	

@@ -1,6 +1,6 @@
 8
 KayoTick M P B 130 Lash 3 60 Torment 4 100
-Rariticuno S P A 120 2 Darken 2 40 BlackOut 4 90
+Rariticuno S P A 120 Darken 2 40 BlackOut 4 90
 Rhinopony B L N 110 Trample 2 30 Skewer 4 90
 RainbowSlash N F W 60 Shine 1 20 Dash 3 60
 Valkysiren A M S 70 EnchantingSong 1 30 FlyBy 3 50
